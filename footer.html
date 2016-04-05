@@ -1,0 +1,20 @@
+<footer class="container footer">
+  <div class="row">
+    <div class="col-md-12">
+      <ul class="list-unstyled">
+        <li ng-repeat="target in model.targets">
+          <a href="{{target.href}}">{{target.label}}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <ul class="list-unstyled">
+        <li>
+          {{model.copyright}}
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
