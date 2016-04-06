@@ -3,7 +3,12 @@
     <div class="col-md-12">
       <ul class="list-unstyled">
         <li ng-repeat="target in model.targets">
-          <a href="{{target.href}}">{{target.label}}</a>
+          <a ng-if="!target.icon" href="{{target.href}}">
+            {{target.label}}
+          </a>
+          <a ng-if="target.icon" href="{{target.href}}">
+            <i class="fa {{target.icon}}"></i>
+          </a>
         </li>
       </ul>
     </div>
