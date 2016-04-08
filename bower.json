@@ -1,6 +1,6 @@
 {
   "name": "bedrock-angular-footer",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "moduleType": ["amd"],
   "main": "./footer.js",
   "ignore": [
