@@ -3,7 +3,7 @@
  */
 define([
   'angular',
-  './footer-directive',
+  './footer-directive'
 ], function(
   angular,
   footerDirective) {
