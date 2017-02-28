@@ -1,8 +1,9 @@
-<footer class="container footer">
+<footer ng-if="$ctrl.route.vars.footer" class="container footer">
+  <hr>
   <div class="row">
     <div class="col-md-12">
       <ul class="list-unstyled">
-        <li ng-repeat="target in model.targets">
+        <li ng-repeat="target in $ctrl.targets">
           <a ng-if="!target.icon" href="{{target.href}}">
             {{target.label}}
           </a>
@@ -17,7 +18,7 @@
     <div class="col-md-12">
       <ul class="list-unstyled">
         <li>
-          {{model.copyright}}
+          {{$ctrl.copyright}}
         </li>
       </ul>
     </div>
