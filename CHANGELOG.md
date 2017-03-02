@@ -1,5 +1,7 @@
 # bedrock-angular-footer ChangeLog
 
+## 3.1.0 - 2017-03-02
+
 ### Changed
 - Add support for bedrock-angular to work with footer v2 and v3.
 
