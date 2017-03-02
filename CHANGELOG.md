@@ -1,5 +1,7 @@
 # bedrock-angular-footer ChangeLog
 
+## 3.0.0 - 2017-03-01
+
 ### Added
 - Support disabling footer with route vars.
 
