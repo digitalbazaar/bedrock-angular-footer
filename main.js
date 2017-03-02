@@ -25,8 +25,13 @@ module.config(function($routeProvider) {
       route.vars = {};
     }
     if(!('footer' in route.vars)) {
-      route.vars.footer = true;
+      route.vars.footer = {};
     }
+    if(!('show' in route.vars.footer)) {
+      route.vars.footer.show = true;
+    }
+    // backwards compatibility outer hr display
+    route.vars.footer._hideOuterHr = true;
     return when.apply($routeProvider, arguments);
   };
 });
