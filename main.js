@@ -10,7 +10,7 @@ define([
 
 'use strict';
 
-var module = angular.module('bedrock.footer', []);
+var module = angular.module('bedrock.footer', ['ngRoute']);
 
 Array.prototype.slice.call(arguments, 1).forEach(function(register) {
   register(module);
