@@ -1,5 +1,10 @@
 # bedrock-angular-footer ChangeLog
 
+## 3.1.1 - 2017-05-17
+
+### Fixed
+- Add missing `ngRoute` dependency.
+
 ## 3.1.0 - 2017-03-02
 
 ### Changed
