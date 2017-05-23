@@ -3,17 +3,10 @@
  *
  * Copyright (c) 2016-2017 Digital Bazaar, Inc. All rights reserved.
  */
-define([], function() {
-
-'use strict';
-
-function register(module) {
-  module.component('brFooter', {
-    controller: Ctrl,
-    templateUrl: requirejs.toUrl(
-      'bedrock-angular-footer/footer-component.html'),
-  });
-}
+export default {
+  controller: Ctrl,
+  templateUrl: 'bedrock-angular-footer/footer-component.html'
+};
 
 /* @ngInject */
 function Ctrl($rootScope, config) {
@@ -22,7 +15,3 @@ function Ctrl($rootScope, config) {
   self.targets = config.data['bedrock-angular-footer'].targets;
   self.copyright = config.data['bedrock-angular-footer'].copyright;
 }
-
-return register;
-
-});

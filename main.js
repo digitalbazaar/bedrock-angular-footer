@@ -3,18 +3,12 @@
  *
  * Copyright (c) 2016-2017 Digital Bazaar, Inc. All rights reserved.
  */
-define([
-  'angular',
-  './footer-component'
-], function(angular) {
-
-'use strict';
+import angular from 'angular';
+import FooterComponent from './footer-component.js';
 
 var module = angular.module('bedrock.footer', ['ngRoute']);
 
-Array.prototype.slice.call(arguments, 1).forEach(function(register) {
-  register(module);
-});
+module.component('brFooter', FooterComponent);
 
 /* @ngInject */
 module.config(function($routeProvider) {
@@ -34,6 +28,4 @@ module.config(function($routeProvider) {
     route.vars.footer._hideOuterHr = true;
     return when.apply($routeProvider, arguments);
   };
-});
-
 });
