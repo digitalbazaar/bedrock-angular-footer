@@ -24,8 +24,6 @@ module.config(function($routeProvider) {
     if(!('show' in route.vars.footer)) {
       route.vars.footer.show = true;
     }
-    // backwards compatibility outer hr display
-    route.vars.footer._hideOuterHr = true;
     return when.apply($routeProvider, arguments);
   };
 });
