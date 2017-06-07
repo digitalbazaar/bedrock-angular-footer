@@ -1,6 +1,6 @@
 {
   "name": "bedrock-angular-footer",
-  "version": "4.0.1-0",
+  "version": "4.0.1",
   "description": "A component for displaying a footer with customizable links and copyright.",
   "main": "index.js",
   "less": "footer.less",
