@@ -5,6 +5,6 @@
  */
 
 module.exports = function(bedrock) {
-  var vars = bedrock.config.views.vars;
+  const vars = bedrock.config.views.vars;
   vars['bedrock-angular-footer'] = vars['bedrock-angular-footer'] || {};
 };

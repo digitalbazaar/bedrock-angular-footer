@@ -6,15 +6,15 @@
 import angular from 'angular';
 import FooterComponent from './footer-component.js';
 
-var module = angular.module('bedrock.footer', ['ngMaterial', 'ngRoute']);
+const module = angular.module('bedrock.footer', ['ngMaterial', 'ngRoute']);
 
 module.component('brFooter', FooterComponent);
 
 /* @ngInject */
-module.config(function($routeProvider) {
+module.config($routeProvider => {
   // extend $routeProvider to set footer defaults
-  var when = $routeProvider.when;
-  $routeProvider.when = function(path, route) {
+  const when = $routeProvider.when;
+  $routeProvider.when = (path, route) => {
     if(!('vars' in route)) {
       route.vars = {};
     }

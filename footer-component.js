@@ -10,7 +10,7 @@ export default {
 
 /* @ngInject */
 function Ctrl($rootScope, config) {
-  var self = this;
+  const self = this;
   self.route = $rootScope.route;
   self.targets = config.data['bedrock-angular-footer'].targets;
   self.copyright = config.data['bedrock-angular-footer'].copyright;
