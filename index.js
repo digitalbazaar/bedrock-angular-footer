@@ -6,7 +6,7 @@
 import angular from 'angular';
 import FooterComponent from './footer-component.js';
 
-var module = angular.module('bedrock.footer', ['ngRoute']);
+var module = angular.module('bedrock.footer', ['ngMaterial', 'ngRoute']);
 
 module.component('brFooter', FooterComponent);
 

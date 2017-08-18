@@ -5,8 +5,8 @@
   "main": "index.js",
   "less": "footer.less",
   "dependencies": {
-    "angular": "~1.6.4",
-    "angular-route": "~1.6.4"
+    "bedrock-angular": "^3.0.0",
+    "bedrock-angular-material": "^1.0.0"
   },
   "bedrock": {
     "browserDependencies": "all"
