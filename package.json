@@ -6,7 +6,8 @@
   "less": "footer.less",
   "dependencies": {
     "bedrock-angular": "^3.0.0",
-    "bedrock-angular-material": "^1.0.0"
+    "bedrock-angular-material": "^1.0.0",
+    "font-awesome": "^4.7.0"
   },
   "bedrock": {
     "browserDependencies": "all"

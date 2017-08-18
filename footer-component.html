@@ -1,26 +1,23 @@
 <hr ng-if="$ctrl.route.vars.footer.show">
-<footer ng-if="$ctrl.route.vars.footer.show" class="container footer">
-  <div class="row">
-    <div class="col-md-12">
-      <ul class="list-unstyled">
-        <li ng-repeat="target in $ctrl.targets">
-          <a ng-if="!target.icon" href="{{target.href}}">
-            {{target.label}}
-          </a>
-          <a ng-if="target.icon" href="{{target.href}}">
-            <i class="fa {{target.icon}}"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
+<footer ng-if="$ctrl.route.vars.footer.show"
+  class="br-flex-vertical-children br-flex-center-children-x">
+  <div layout="row">
+    <md-list>
+      <md-list-item ng-repeat="target in $ctrl.targets">
+        <a ng-if="!target.icon" href="{{target.href}}">
+          {{target.label}}
+        </a>
+        <a ng-if="target.icon" href="{{target.href}}">
+          <i class="fa {{target.icon}}"></i>
+        </a>
+      </md-list-item>
+    </md-list>
   </div>
-  <div class="row">
-    <div class="col-md-12">
-      <ul class="list-unstyled">
-        <li>
-          {{$ctrl.copyright}}
-        </li>
-      </ul>
-    </div>
+  <div layout="row">
+    <md-list>
+      <md-list-item>
+        {{$ctrl.copyright}}
+      </md-list-item>
+    </md-list>
   </div>
 </footer>

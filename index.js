@@ -14,7 +14,8 @@ module.component('brFooter', FooterComponent);
 module.config($routeProvider => {
   // extend $routeProvider to set footer defaults
   const when = $routeProvider.when;
-  $routeProvider.when = (path, route) => {
+  // this must not be an arrow function
+  $routeProvider.when = function(path, route) {
     if(!('vars' in route)) {
       route.vars = {};
     }
