@@ -1,5 +1,8 @@
 # bedrock-angular-footer ChangeLog
 
+### Changed
+- **BREAKING**: Switch to material design.
+
 ## 4.0.1 - 2017-06-07
 
 ### Fixed
